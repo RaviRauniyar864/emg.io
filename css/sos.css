@@ -1,0 +1,91 @@
+.playBtn{
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #002d5b;
+    border: 1px solid #0041df;
+    box-shadow: 1px 1px lightgrey;
+    border-radius: 5px;
+}
+.gameWindow{
+    height: 83vh;
+}
+.gameArea, .scoreBox{
+    margin: 0;
+}
+.gameBox, .charRow, .charDiv, .runway{
+    padding: 0;
+}
+.gameArea{
+    height: 60vh;
+}
+.sosHeader{
+    height: 8vh;
+    border-bottom: 1px solid black;
+}
+.charRow{
+    height: 52vh;
+    background-image: url("../images/charRowBg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.charDiv{
+    height: 120px;
+    width: 100%;
+}
+.scoreBox p{
+    font-size: 14px;
+    text-align: center;
+}
+#cryingSpidey, #spidey{
+    position: relative;
+    float: left;
+}
+#goblin{
+    position: relative;
+    float: right;
+}
+#cryingSpidey img, #spidey img, #goblin img{
+    height: 100%;
+    width: 100%;
+}
+#spidey, #cryingSpidey{
+    width: 50px;
+    height: 60px;
+    left: 10px;
+    top: 60px;
+}
+#cryingSpidey{
+    display: none;
+}
+.jump{
+    animation: spideyAnimate 500ms;
+}
+@keyframes spideyAnimate  {
+    0%{top: 60px;}
+    30%{top: 0px;}
+    70%{top: 0px;}
+    0%{top: 60px;}
+}
+#goblin{
+    width: 30px;
+    height: 30px;
+    top: 90px;
+    right: 0;
+    visibility: visible;
+}
+.slide{
+    animation: goblinAnimate 1s infinite linear;
+}
+@keyframes goblinAnimate {
+    0%{right: 0%;}
+    100%{right: 90%;}
+}
+.sosHeader, .scoreBox{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.sosHeader{
+    margin-bottom: 0;
+}

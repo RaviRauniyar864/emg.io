@@ -1,0 +1,11 @@
+.intro{
+    margin: 0;
+    width: 100%;
+    height: 83vh;
+}
+.carousel-inner, .carousel-item img {
+    height: 75vh;
+}
+.carousel-control-prev, .carousel-control-next{
+    top: 20vh;
+}
