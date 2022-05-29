@@ -77,7 +77,7 @@
     visibility: visible;
 }
 .slide{
-    animation: goblinAnimate 1s infinite linear;
+    animation: goblinAnimate 1500ms infinite linear;
 }
 @keyframes goblinAnimate {
     0%{right: 0%;}
